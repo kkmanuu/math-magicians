@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# :Math-Magicians: Table of Contents
+# :green_book: Table of Contents
 - [:List: Math-Magicians](#-Awesome-a-nameabout-projecta)
   - [:hammer_and_wrench: Built With ](#-built-with-a-namebuilt-witha)
     - [Tech Stack ](#tech-stack-a-nametech-stacka)
