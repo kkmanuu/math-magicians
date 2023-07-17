@@ -122,7 +122,7 @@ If you like this project give start.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :handshake: Contributing <a name="contributing"></a>
-Contributions, issues [page issues](https://github.com/kkmanuu/To-Do-Lists/issues), and feature requests are welcome!
+Contributions, issues [page issues](https://github.com/kkmanuu/math-magicians/issues), and feature requests are welcome!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :pray: Acknowledgments <a name="acknowledgements"></a>
