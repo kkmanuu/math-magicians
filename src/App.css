@@ -1,39 +1,65 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: content-box;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.calculator {
+  width: 38%;
+  min-width: 600px;
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc; /* Add a border to create a box-like appearance */
+  border-radius: 10px; /* Add rounded corners to the box */
+  background-color: #f0f0f0; /* Set a background color for the box */
+}
+
+.buttons-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; /* Add some gap between buttons */
+}
+
+button {
+  width: 100%;
+  height: 70px;
+  border: 1px solid gray;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+button:active {
+  background-color: rgb(148, 148, 217);
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  width: 405%;
+  height: 80px;
+  font-size: 55px;
+  text-align: right;
+  background-color: gray;
+  border-radius: 5px; /* Add rounded corners to the calculator screen */
+  padding: 10px; /* Add some padding to the calculator screen */
+  margin-bottom: 10px; /* Add some space between the calculator screen and buttons */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.zero {
+  width: 100%; /* Make the zero button take the full width */
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.operation {
+  background-color: rgb(253, 165, 76);
 }
