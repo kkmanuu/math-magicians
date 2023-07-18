@@ -1,14 +1,12 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  padding: 0;
 }
 
 .calculator {
-  width: 38%;
-  min-width: 550px;
-  max-width: 100%;
-  padding: 20px;
+  width: 35%;
+  min-width: 600px;
+  margin: auto;
 }
 
 .buttons-div {
@@ -33,15 +31,14 @@ button:active {
 }
 
 .input-field {
-  width: 76%;
-  height: 80px;
-  font-size: 55px;
+  width: 100%;
+  font-size: 50px;
   text-align: right;
-  background-color: gray;
+  background-color: rgb(148, 148, 217);
 }
 
 .zero {
-  width: 38%;
+  width: 50%;
 }
 
 .operation {
