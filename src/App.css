@@ -1,35 +1,22 @@
 * {
   margin: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0;
-}
-
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
 }
 
 .calculator {
   width: 38%;
-  min-width: 600px;
+  min-width: 550px;
   max-width: 100%;
   padding: 20px;
-  border: 1px solid #ccc; /* Add a border to create a box-like appearance */
-  border-radius: 10px; /* Add rounded corners to the box */
-  background-color: #f0f0f0; /* Set a background color for the box */
 }
 
 .buttons-div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px; /* Add some gap between buttons */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 button {
-  width: 100%;
+  width: 150px;
   height: 70px;
   border: 1px solid gray;
   font-size: 24px;
@@ -46,18 +33,15 @@ button:active {
 }
 
 .input-field {
-  width: 405%;
+  width: 76%;
   height: 80px;
   font-size: 55px;
   text-align: right;
   background-color: gray;
-  border-radius: 5px; /* Add rounded corners to the calculator screen */
-  padding: 10px; /* Add some padding to the calculator screen */
-  margin-bottom: 10px; /* Add some space between the calculator screen and buttons */
 }
 
 .zero {
-  width: 100%; /* Make the zero button take the full width */
+  width: 38%;
 }
 
 .operation {
