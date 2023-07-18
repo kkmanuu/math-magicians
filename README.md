@@ -55,9 +55,11 @@ npm install
 
 
 ### Usage
-To run the project, follow these instructions:
-- After Cloning this repo to your local machine.
-- Open the `index.html` in your browser.
+Because this project uses webpack as a bundler, to run the project, execute the following command:
+- <code>npm run start</code>
+-  OR
+
+ - <code>npm start</code>
 
 ### Run tests
 To run tests, run the following command:
