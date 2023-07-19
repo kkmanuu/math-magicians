@@ -4,13 +4,23 @@ function isNumber(item) {
   return !!item.match(/[0-9]+/);
 }
 
-function handleNumber(obj, buttonName) {
+function handleNumberButton(obj, buttonName) {
   if (buttonName === '0' && obj.next === '0') {
     return {};
   }
 
-  if (obj.operation || obj.next === '0') {
-    return { ...obj, next: obj.next ? obj.next + buttonName : buttonName };
+  if (obj.operation) {
+    if (obj.next && obj.next !== '0') {
+      return { ...obj, next: obj.next + buttonName };
+    }
+    return { ...obj, next: buttonName };
+  }
+
+  if (obj.next && obj.next !== '0') {
+    return {
+      next: obj.next + buttonName,
+      total: null,
+    };
   }
 
   return {
@@ -19,23 +29,29 @@ function handleNumber(obj, buttonName) {
   };
 }
 
-function handleDecimal(obj) {
-  if (obj.next && obj.next.includes('.')) {
-    return { ...obj };
+function handleDecimalButton(obj) {
+  if (obj.next) {
+    if (obj.next.includes('.')) {
+      return { ...obj };
+    }
+    return { ...obj, next: `${obj.next}.` };
   }
 
-  if (obj.operation || !obj.next) {
-    return { ...obj, next: obj.next ? `${obj.next}.` : '0.' };
+  if (obj.operation) {
+    return { ...obj, next: '0.' };
   }
 
-  if (obj.total && obj.total.includes('.')) {
-    return {};
+  if (obj.total) {
+    if (obj.total.includes('.')) {
+      return {};
+    }
+    return { ...obj, next: `${obj.total}.` };
   }
 
-  return { ...obj, next: `${obj.total}.` };
+  return { ...obj, next: '0.' };
 }
 
-function handleEquals(obj) {
+function handleEqualButton(obj) {
   if (obj.next && obj.operation) {
     return {
       total: operate(obj.total, obj.next, obj.operation),
@@ -43,18 +59,45 @@ function handleEquals(obj) {
       operation: null,
     };
   }
-
+  // '=' with no operation, nothing to do
   return {};
 }
 
-function handleNegate(obj) {
-  const target = obj.next ? 'next' : 'total';
-  const newValue = (-1 * parseFloat(obj[target])).toString();
-
-  return { ...obj, [target]: newValue };
+function handlePlusMinusButton(obj) {
+  if (obj.next) {
+    return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
+  }
+  if (obj.total) {
+    return { ...obj, total: (-1 * parseFloat(obj.total)).toString() };
+  }
+  return {};
 }
 
-function handleOperation(obj, buttonName) {
+export default function calculate(obj, buttonName) {
+  if (buttonName === 'AC') {
+    return {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+
+  if (isNumber(buttonName)) {
+    return handleNumberButton(obj, buttonName);
+  }
+
+  if (buttonName === '.') {
+    return handleDecimalButton(obj);
+  }
+
+  if (buttonName === '=') {
+    return handleEqualButton(obj);
+  }
+
+  if (buttonName === '+/-') {
+    return handlePlusMinusButton(obj);
+  }
+
   if (!obj.next && obj.total && !obj.operation) {
     return { ...obj, operation: buttonName };
   }
@@ -84,32 +127,4 @@ function handleOperation(obj, buttonName) {
     next: null,
     operation: buttonName,
   };
-}
-
-export default function calculate(obj, buttonName) {
-  if (buttonName === 'AC') {
-    return {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
-
-  if (isNumber(buttonName)) {
-    return handleNumber(obj, buttonName);
-  }
-
-  if (buttonName === '.') {
-    return handleDecimal(obj);
-  }
-
-  if (buttonName === '=') {
-    return handleEquals(obj);
-  }
-
-  if (buttonName === '+/-') {
-    return handleNegate(obj);
-  }
-
-  return handleOperation(obj, buttonName);
 }
