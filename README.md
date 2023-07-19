@@ -17,7 +17,7 @@
   - [:memo: License ](#-license-a-namelicensea)
 
    # :book: Math-Magicians <a name="about-project"></a>
-  - Math magicians" This  a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote.
+  - Math magicians" This a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
 - HTML
@@ -27,81 +27,79 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
  ### Key Features <a name="key-features"></a>
-- *Set up a React app.*
-- *Use React documentation.*
-
+- *Use React components.*
+- *Use React props.*
+- *Use React state.*
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :computer: Getting Started <a name="getting-started"></a>
+To get a local copy up and running, follow these steps.
 
-## Available Scripts
+### Prerequisites
+In order to run this project you need the following:
+- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- `node` should be installed in your local machine, [node website](https://nodejs.org/en/download/).
+- Install the `npm` package manager use this [to install both node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
 
-In the project directory, you can run:
+### Setup
 
-### `npm start`
+- Navigate to the location of the folder in your machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Install
+To install all dependencies, run:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Usage
+Because this project uses webpack as a bundler, to run the project, execute the following command:
+- <code>npm run start</code>
+-  OR
 
-### `npm run build`
+ - <code>npm start</code>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Run tests
+To run tests, run the following command:
+- Track HTML linter errors run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npx hint .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Track CSS linter errors run:
 
-### `npm run eject`
+npx stylelint "**/*.{css,scss}"
 
-*Note: this is a one-way operation. Once you `eject`, you can't go back!*
+- Track JavaScript linter errors run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npx eslint .
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
+To run the project, follow these instructions:
+- After Cloning this repo to your local machine.
+- Open the `index.html` in your browser.
 
-## Learn More
+### Run tests
+To run tests, run the following command:
+- Track HTML linter errors run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npx hint .
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Track CSS linter errors run:
 
-### Code Splitting
+npx stylelint "**/*.{css,scss}"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Track JavaScript linter errors run:
 
-### Analyzing the Bundle Size
+npx eslint .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Deployment <a name="deployment"></a>
+- Deployed with github pages
+- For more information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## :busts_in_silhouette: Authors <a name="authors"></a>
 :bust_in_silhouette: *Emmanuel Kipngeno*
@@ -112,8 +110,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## :telescope: Future Features <a name="future-features"></a>
 
-- *Set up a React app.*
-- *Use React documentation.*
+ - *Use React components.*
+ - *Use React props.*
+ - *Use React state.*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
