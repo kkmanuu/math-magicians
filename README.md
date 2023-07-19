@@ -27,9 +27,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
  ### Key Features <a name="key-features"></a>
-- *Use React components.*
-- *Use React props.*
-- *Use React state.*
+- *Handle events in a React app.*
+- *Use React life cycle methods.*
+- *use the mechanism of lifting state up.*
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -63,7 +63,7 @@ Because this project uses webpack as a bundler, to run the project, execute the 
 
 ### Run tests
 To run tests, run the following command:
-- Track HTML linter errors run:
+- Track HTML linter errors run
 
 npx hint .
 
@@ -110,9 +110,9 @@ npx eslint .
 
 ## :telescope: Future Features <a name="future-features"></a>
 
- - *Use React components.*
- - *Use React props.*
- - *Use React state.*
+ - *Handle events in a React app.*
+- *Use React life cycle methods.*
+- *use the mechanism of lifting state up.*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
