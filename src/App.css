@@ -4,7 +4,7 @@
 }
 
 .calculator {
-  width: 35%;
+  width:fit-content;
   min-width: 600px;
   margin: auto;
 }
