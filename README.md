@@ -27,9 +27,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
  ### Key Features <a name="key-features"></a>
-- *Handle events in a React app.*
-- *Use React life cycle methods.*
-- *use the mechanism of lifting state up.*
+- *Use the correct React hook when fetching data*
+- *Connect to an API within a functional component*
+- *Show different UI outputs depending on the component state*
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -110,9 +110,9 @@ npx eslint .
 
 ## :telescope: Future Features <a name="future-features"></a>
 
- - *Handle events in a React app.*
-- *Use React life cycle methods.*
-- *use the mechanism of lifting state up.*
+ - *Use the correct React hook when fetching data*
+- *Connect to an API within a functional component*
+- *Show different UI outputs depending on the component state*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
