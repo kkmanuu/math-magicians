@@ -1,0 +1,17 @@
+.paragraph {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+.paraDiv {
+  width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+h2 {
+  width: 90%;
+  margin: auto;
+  margin-top: 54px;
+}
