@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Itim', cursive;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 20%);
+  color: var(--white);
+}
+
+.calInterface {
+  width: 50%;
+  align-content: flex-end;
+}
+
+.buttonDiv {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+  width: 23%;
+  height: 70px;
+  border: 1px solid gray;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+button:active {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 92%;
+  font-size: 50px;
+  text-align: right;
+  background-color: rgb(148, 148, 217);
+}
+
+.zero {
+  width: 46%;
+}
+
+.operation {
+  background-color: rgb(253, 165, 76);
+}
+
+.prompAndCalDiv {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  color: white;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.myh2 {
+  margin-left: 70px;
+  font-size: 40px;
+}

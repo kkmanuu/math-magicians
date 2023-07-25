@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.ulDiv {
+  margin-right: 70px;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
