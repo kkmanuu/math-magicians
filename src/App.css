@@ -4,7 +4,7 @@
 }
 
 .calculator {
-  width: 35%;
+  width: fit-content;
   min-width: 600px;
   margin: auto;
 }
@@ -14,7 +14,7 @@
 }
 
 button {
-  width: 150px;
+  width: 151px;
   height: 70px;
   border: 1px solid gray;
   font-size: 24px;
