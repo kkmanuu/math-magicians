@@ -31,7 +31,9 @@
  - *Use styles in a React app.*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+:rocket: Live Demo
 
+[Click here](https://math-magicians-u8mn.onrender.com/calculator)
 
 ## :computer: Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
