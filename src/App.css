@@ -14,7 +14,7 @@
 }
 
 button {
-  width: 150px;
+  width: 151px;
   height: 70px;
   border: 1px solid gray;
   font-size: 24px;
@@ -32,7 +32,7 @@ button:active {
 
 .input-field {
   width: 100%;
-  font-size: 52px;
+  font-size: 50px;
   text-align: right;
   background-color: rgb(148, 148, 217);
 }
